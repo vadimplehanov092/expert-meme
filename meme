@@ -1,0 +1,17 @@
+    func addBlockOperation() {
+        operationQueue.addOperation {
+            print("Simple Block1")
+            sleep(2)
+        }
+        operationQueue.addOperation {
+            print("Simple Block2")
+            sleep(2)
+        }
+        operationQueue.addOperation {
+            print("Simple Block3")
+            sleep(2)
+        }
+        operationQueue.waitUntilAllOperationsAreFinished()
+        print("allFinished")
+            
+    }
